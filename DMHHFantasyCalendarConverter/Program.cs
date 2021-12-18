@@ -69,4 +69,3 @@ XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = 
 serializer.Serialize(xmlWriter, root);
 File.WriteAllText(Path.Combine(Path.GetDirectoryName(filename), Path.GetFileNameWithoutExtension(filename) + ".xml"), writer.ToString(),
                   Encoding.UTF8);
-Console.Read();
